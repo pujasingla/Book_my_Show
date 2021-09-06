@@ -1,21 +1,3 @@
-import React from "react";
-import Slider from "react-slick";
-
-//component
-import Poster from "../Poster/Poster.component";
-//config
-import settings from "../../config/PosterCarousal.config";
-//Image
-import PremierImages from "../../config/TempPosters.config";
-
-export const Premier =() => {
-/*  const settings ={
-    infinite:true,
-    autoplay:false,
-    slidesToShow:5,
-    slidesToScroll:2,
-    InitialSlide:0
-  };
 
   const PremierImages = [
     {
@@ -109,22 +91,4 @@ export const Premier =() => {
       subtitle:"Horror/Thriller"
     }
   ]
-*/
-
-  return (
-    <>
-    <div className="flex flex-col items-start">
-    <h3 className="text-white text-xl font-bold">Premiers</h3>
-    <p className="text-white text-sm py-4"> Brand new release every Friday</p>
-    </div>
-    <Slider {...settings}>
-    {PremierImages.map((image) => (
-      <Poster {...image} isDark/>
-    ))}
-    </Slider>
-    </>
-  )
-};
-
-
-export default Premier;
+export default PremierImages;
