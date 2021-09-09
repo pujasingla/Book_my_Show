@@ -20,7 +20,7 @@ const HomePage=() => {
     <div className="bg-navCol-200 py-16">
 
 
-      <div className="container mx-auto px-44">
+      <div className="container mx-auto px-4">
       <div className="flex">
         <img src="https://in.bmscdn.com/discovery-catalog/collections/tr:w-1440,h-120/premiere-rupay-banner-web-collection-202104230555.png"
         alt="Rupay"
@@ -33,7 +33,7 @@ const HomePage=() => {
     </div>
     </div>
 
-    <div className ="container mx-auto px-44">
+    <div className ="container mx-auto px-4">
     <PosterSlider
     images={TempPosters}
     title="Online Streaming Events"
@@ -41,7 +41,7 @@ const HomePage=() => {
     />
     </div>
 
-    <div className ="container mx-auto px-44">
+    <div className ="container mx-auto px-4">
     <PosterSlider
     images={TempPosters}
     title="Online Events"
