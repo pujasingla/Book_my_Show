@@ -20,7 +20,7 @@ const MovieHero = () => {
     </div>
 
 
-    <div className="relative hidden lg:block" style={{height: "30rem"}}>
+    <div className="relative hidden lg:block" style={{height: "32rem"}}>
 
       <div className="absolute h-full w-full z-10"
       style={{ backgroundImage: "linear-gradient(90deg, rgb(34, 34, 34) 24.97%, rgb(34, 34, 34) 38.3%, rgba(34, 34, 34, 0.04) 97.47%, rgb(34, 34, 34) 100%)"}}
@@ -47,10 +47,19 @@ const MovieHero = () => {
               </h3>
 
           </div>
-          <div>
-            <h2>Add your rating & review</h2>
+
+
+          <div className="relative flex flex-row items-center mr-24 bg-gray-800 rounded-md bg-opacity-75 p-3">
+            <div className="flex flex-col">
+              <h2 className="font-bold">Add your rating & review</h2>
+              <h3>Your ratings matter</h3>
+            </div>
+            <div className="absolute bg-white z-10 rounded-md right-5 p-1">
+              <h1 className="text-black text-xl">Rate now</h1>
+            </div>
 
           </div>
+
           <div className="flex flex-col gap-2">
           <h2 className="pl-2 bg-gray-200 rounded font-bold text-black mr-64">2D, 3D, MX4D, 4DX, IMAX 2D </h2>
           <h2 className="pl-2 bg-gray-200 rounded font-bold text-black mr-24 ">English, Tamil, Hindi, Telugu, Malayalam, Kannada</h2>
