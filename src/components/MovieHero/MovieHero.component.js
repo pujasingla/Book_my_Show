@@ -1,6 +1,6 @@
 import React from "react";
 import {BiShareAlt} from "react-icons/bi";
-
+import {BsHeartFill} from "react-icons/bs";
 const MovieHero = () => {
   return (
     <>
@@ -39,8 +39,12 @@ const MovieHero = () => {
           <div>
             <h2 className="font-bold text-4xl">Shang-Chi and the Legend of the Ten Rings</h2>
           </div>
-          <div>
-            <h3><span className="text-xl font-bold">91%</span> 38.9K ratings</h3>
+          <div className="">
+            <h3 className="flex flex-row items-center gap-2" >
+              <BsHeartFill className="text-red-500 text-xl"/>
+              <span className="text-xl font-bold">91%  </span>
+               38.9K ratings >
+              </h3>
 
           </div>
           <div>
