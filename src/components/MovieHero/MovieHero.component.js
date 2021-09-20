@@ -1,6 +1,25 @@
 import React from "react";
 import {BiShareAlt} from "react-icons/bi";
 import {BsHeartFill} from "react-icons/bs";
+
+
+ const launchRazorPay = () => {
+  let options = {
+    key: "rzp_test_xfF7rpzlSnjH4l",
+    amount:500,
+    currency:"INR",
+    name:"Book My Show Clone",
+    description:"Movie Purchase on Rental",
+    image:"https://i.ibb.co/zPBYW3H/imgbin-bookmyshow-office-android-ticket-png.png",
+    handler:()=>{
+      alert("Payment Done")
+    },
+    theme: {color:"#c4242d"}
+  };
+  let rzp = new window.Razorpay(options);
+  rzp.open();
+};
+
 const MovieHero = () => {
   return (
     <>
@@ -69,9 +88,10 @@ const MovieHero = () => {
             2h 12m • Action Adventure Fantasy  UA• 3 Sep, 2021
           </h3>
         </div>
-        <div className="flex items-center font-bold text-white bg-red-500 mr-72 rounded-md h-12 text-lg bg-opacity-100">
-          <h3 className="pl-12">Book tickets</h3>
-
+        <div className="flex items-center">
+          <button onClick={launchRazorPay} class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-8 rounded">
+           Book tickets
+         </button>
         </div>
     </div>
     <div className="text-gray-300 bg-gray-900 flex flex-row gap-3 w-30 p-5 ml-64 items-center rounded h-12 text-xl bg-opacity-50">
